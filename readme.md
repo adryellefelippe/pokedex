@@ -1,0 +1,1 @@
+Pokedex criada com auxilio do video do canal 'Manual do Dev' utilizando a PokéAPI , projeto feito para estudo. 
