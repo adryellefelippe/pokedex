@@ -3,8 +3,8 @@ const pokemonNumber = document.querySelector('.pokemon-number');
 const pokemonImg = document.querySelector('.pokemon-image');
 const form = document.querySelector('.form');
 const input = document.querySelector('.input-search');
-const buttonPrev = document.querySelector('.button btn-prev');
-const buttonNext = document.querySelector('.button btn-next');
+const buttonPrev = document.querySelector('.button-btn-prev');
+const buttonNext = document.querySelector('.button-btn-next');
 
 let search = 1;
 
@@ -43,6 +43,7 @@ form.addEventListener('submit', (event)=> {
 });
 
 buttonPrev.addEventListener('click', ()=> {
+    console.log("fui clicado");
     if(search > 1){
         search -= 1;
         renderPokemon(search);
@@ -50,6 +51,7 @@ buttonPrev.addEventListener('click', ()=> {
 });
 
 buttonNext.addEventListener('click', ()=> {
+    console.log("fui clicado");
     search += 1;
     renderPokemon(search);
 });
